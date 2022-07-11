@@ -115,19 +115,6 @@ class Linkedlist {
         linkedlist.newNode(300);
         linkedlist.newNode(400);
         linkedlist.newNode(500,4);
-        // linkedlist.removeByPos(3);
-        // linkedlist.display();
         System.out.print(linkedlist.searchByPos(0));
-
-        // System.out.println("newlist start from here");
-        // Node linkedlist1 = new Node();
-        // linkedlist1.newNode(101);
-        // linkedlist1.newNode(102);
-        // linkedlist1.newNode(103);
-        // linkedlist1.newNode(104);
-        // linkedlist1.newNode(105,3);
-        // linkedlist1.removeByPos(0);
-        // linkedlist1.display();
-
     }
 }
