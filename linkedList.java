@@ -27,8 +27,8 @@ class Node {
     /* insert at random position */
     public Node newNode(int data, int pos) {
         if (pos > totalNode) {
-            System.out.println("position overflow:add postion wrong ");
-             return head;
+            System.out.println("position overflow:add wrong position ");
+             return null;
         }
         Node newnode = new Node(data);
         if (pos == 0) {
