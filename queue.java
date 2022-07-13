@@ -6,6 +6,9 @@ class Queue {
         this.capacity = capacity;
         array = new int[capacity];
     }
+    /**
+     * @param value accept queue value and insert on from rear
+     */
     public void add(int value){
         if(rear == capacity){
             System.out.println("queue is overflow");
@@ -15,15 +18,26 @@ class Queue {
         }
     }
     
+    /**
+     * @return front value of queue if queue is full else return -1
+     */
     public int remove(){
         if(rear == front){
             System.out.println("queue is underflow");
             return -1;
         }else{
             int data = array[front];
-            System.out.println(data);
             front++;
             return data;
+        }
+    }
+    /**
+     * print the queue
+     */
+    public void printQueue(){
+        while(front != rear){
+            System.out.println(array[front]);
+            front++;
         }
     }
 }
@@ -36,13 +50,14 @@ class Queuemain{
         Q.add(30);
         Q.add(40);
         Q.add(50);
-        Q.add(60);
         Q.remove();
         Q.remove();
-        Q.remove();
-        Q.remove();
-        Q.remove();
-        Q.remove();
+        Q.printQueue();
+
+        // Q.remove();
+        // Q.remove();
+        // Q.remove();
+        // Q.remove();
     }
     
 }
